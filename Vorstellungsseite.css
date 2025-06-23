@@ -1,0 +1,73 @@
+/* Deine eigene CSS-Datei */
+
+body {
+    background-color: #f8f9fa; /* hellgrau */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 span {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+/* Buttons schweben beim Hover */
+.btn {
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Karten/Boxen schweben beim Hover (z. B. für Profilbild-Box) */
+.card, .bg-opacity-10 {
+    transition: all 0.3s ease;
+}
+.card:hover, .bg-opacity-10:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* Dark Mode Grundzustand */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+body.dark-mode .navbar-brand,
+body.dark-mode .btn-outline-light {
+    color: #e0e0e0;
+}
+
+/* Sections */
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+body.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+/* Cards, Badges, Buttons, Footer */
+body.dark-mode .bg-primary,
+body.dark-mode .btn-primary {
+    background-color: #4e4e4e !important;
+    border-color: #4e4e4e !important;
+}
+body.dark-mode .btn-outline-primary {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #888;
+}
+
+/* Smooth Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
